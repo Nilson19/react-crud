@@ -1,12 +1,66 @@
-# React + Vite
+📝 Proyecto CRUD de Usuarios en React
+Este proyecto es una aplicación React que implementa las funcionalidades básicas de un CRUD (Crear, Leer, Actualizar, Eliminar) para la tabla de usuarios. Permite a los usuarios registrarse, iniciar sesión, acceder a un dashboard protegido, listar todos los usuarios, así como eliminar y editar usuarios existentes.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Características Principales
+✅ Registro de Usuarios
+Permite a los nuevos usuarios crear una cuenta en la aplicación.
 
-Currently, two official plugins are available:
+✅ Inicio de Sesión (Login)
+Autenticación de usuarios para acceder a funcionalidades protegidas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ Dashboard Protegido
+Una ruta privada a la que solo pueden acceder los usuarios autenticados.
 
-## Expanding the ESLint configuration
+✅ Listado de Usuarios
+Muestra una lista de todos los usuarios registrados.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✅ Eliminación de Usuarios
+Permite a los administradores o usuarios con los permisos adecuados eliminar cuentas de usuario.
+
+✅ Edición de Usuarios
+Funcionalidad para modificar la información de los usuarios existentes.
+
+🛠️ Primeros Pasos
+Sigue estas instrucciones para obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y prueba.
+
+📋 Prerrequisitos
+Asegúrate de tener instalado Node.js y npm (que viene incluido con Node.js) en tu sistema.
+
+⚙️ Instalación
+Clona el repositorio:
+
+bash
+Copiar
+Editar
+git clone <URL_DEL_REPOSITORIO>
+cd <NOMBRE_DEL_PROYECTO>
+Instala las dependencias:
+
+bash
+Copiar
+Editar
+npm install
+▶️ Ejecución del Proyecto
+Una vez que las dependencias estén instaladas, puedes iniciar la aplicación en modo desarrollo.
+
+Iniciar el servidor de desarrollo
+Para levantar la aplicación localmente:
+
+bash
+Copiar
+Editar
+npm run dev
+Esto iniciará la aplicación en modo desarrollo. Abre http://localhost:5173 en tu navegador para verla.
+La página se recargará automáticamente si haces cambios en el código.
+
+🗂️ Estructura del Proyecto
+
+src/
+├── components/         # Componentes reutilizables
+├── views/              # Páginas principales de la aplicación (Login, Register, Dashboard)
+├── services/           # Lógica para interactuar con la API (p. ej., auth.js, users.js)
+├── viewmodels/         # View Models
+├── utils/              # Utilidades varias (p. ej., validaciones)
+├── App.js              # Componente principal de la aplicación
+├── index.js            # Punto de entrada de la aplicación
+└── index.css           # Estilos globales
