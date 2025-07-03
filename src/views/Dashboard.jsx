@@ -43,6 +43,12 @@ export default function Dashboard() {
     setEditModalOpen(false);
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("user");
+    window.location.href = "/";
+  };
+
   return (
     <Container maxWidth="md" sx={{ mt: 4 }}>
       <Box
@@ -52,7 +58,7 @@ export default function Dashboard() {
           justifyContent: "flex-end",
         }}
       >
-        <Button variant="outlined" color="error">
+        <Button variant="outlined" color="error" onClick={handleLogout}>
           Cerrar sesión
         </Button>
       </Box>
