@@ -66,12 +66,14 @@ Esto iniciará la aplicación en modo desarrollo. Abre http://localhost:5173 en 
 
 ## Estructura
 
+```
 src/
 ├── components/         # Componentes reutilizables
 ├── views/              # Páginas principales de la aplicación (Login, Register, Dashboard)
-├── services/           # Lógica para interactuar con la API (p. ej., auth.js, users.js)
+├── services/           # Lógica para interactuar con la API (auth.js, users.js)
 ├── viewmodels/         # View Models
 ├── utils/              # Utilidades varias (p. ej., validaciones)
 ├── App.js              # Componente principal de la aplicación
 ├── index.js            # Punto de entrada de la aplicación
 └── index.css           # Estilos globales
+
